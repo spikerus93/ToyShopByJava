@@ -17,5 +17,36 @@ public class Toy {
         return name;
     }
 
-    
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getNumberOfToys() {
+        return numberOfToys;
+    }
+
+    public void setNumberOfToys(int numberOfToys) {
+        this.numberOfToys = numberOfToys;
+    }
+
+    public int getFrequency() {
+        return frequency;
+    }
+
+    public void setFrequency(int frequency) {
+        this.frequency = frequency;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + id + " Название игрушки: " + name + ", количество: " + numberOfToys + ", частота выпадения: " + frequency;
+    }
 }
