@@ -38,6 +38,7 @@ public class ToyList<E extends ToyItem> implements Serializable, Iterable<E> {
             priorityList.remove(choice);
             priorityList.add(choice);
         }
+        return result;
     }
 
     public void setFrequences(int total) {
@@ -85,6 +86,6 @@ public class ToyList<E extends ToyItem> implements Serializable, Iterable<E> {
 
     @Override
     public Iterator<E> iterator() {
-        return null;
+        return new ToyIterator<>(toyList);
     }
 }
