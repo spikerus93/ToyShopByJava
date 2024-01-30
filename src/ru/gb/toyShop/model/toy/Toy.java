@@ -1,8 +1,10 @@
 package ru.gb.toyShop.model.toy;
 
+import ru.gb.toyShop.model.toylist.ToyItem;
+
 import java.io.Serializable;
 
-public class Toy implements Serializable {
+public class Toy implements Serializable, ToyItem {
 
     private int id;
     private String name;

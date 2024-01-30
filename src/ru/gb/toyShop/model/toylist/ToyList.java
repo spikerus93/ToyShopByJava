@@ -54,7 +54,7 @@ public class ToyList<E extends ToyItem> implements Serializable, Iterable<E> {
         this.total = total;
     }
 
-    private int getTotal() {
+    public int getTotal() {
         return  total;
     }
 
